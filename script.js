@@ -13,16 +13,13 @@ document.querySelector(".check").addEventListener("click", function () {
   if (!guess) {
     document.querySelector(".message").textContent = "Enter A Value";
   } else {
-    guess = Number(document.querySelector(".guess").value);
     if (guess === randomNumber) {
       document.querySelector(".message").textContent = "🎉Correct Number";
       document.querySelector(".number").textContent = randomNumber;
     } else if (guess < randomNumber) {
       document.querySelector(".message").textContent = "Too Low!!";
-      guess = Number(document.querySelector(".guess").value);
     } else {
       document.querySelector(".message").textContent = "Too High!!";
-      guess = Number(document.querySelector(".guess").value);
     }
   }
 });
