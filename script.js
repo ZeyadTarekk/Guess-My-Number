@@ -13,13 +13,21 @@ document.querySelector(".number").textContent = randomNumber;
 
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
+  // when there is no input
   if (!guess) {
     document.querySelector(".message").textContent = "⛔ No Number!!";
   } else {
+    // when the player wins
     if (guess === randomNumber) {
       document.querySelector(".message").textContent = "🎉Correct Number";
       document.querySelector(".highscore").textContent =
         document.querySelector(".score").textContent;
+
+      document.querySelector("body").style.backgroundColor = "#60b347";
+
+      document.querySelector(".number").style.width = "30rem";
+
+      //when the player guess a lower number
     } else if (guess < randomNumber) {
       if (document.querySelector(".score").textContent > 1) {
         document.querySelector(".message").textContent = "Too Low!!";
@@ -28,6 +36,7 @@ document.querySelector(".check").addEventListener("click", function () {
           "You Lost the game!💥💥";
       }
       document.querySelector(".score").textContent--;
+      //when the player guess a higher number
     } else {
       if (document.querySelector(".score").textContent > 1) {
         document.querySelector(".message").textContent = "Too High!!";
