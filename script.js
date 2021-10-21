@@ -7,19 +7,35 @@
 // document.querySelector(".number").textContent = 13;
 // document.querySelector(".score").textContent = 7;
 // document.querySelector(".guess").value = 7;
-let randomNumber = Math.trunc(Math.random() * 20 + 1);
+
+const randomNumber = Math.trunc(Math.random() * 20 + 1);
+document.querySelector(".number").textContent = randomNumber;
+
 document.querySelector(".check").addEventListener("click", function () {
-  let guess = Number(document.querySelector(".guess").value);
+  const guess = Number(document.querySelector(".guess").value);
   if (!guess) {
-    document.querySelector(".message").textContent = "Enter A Value";
+    document.querySelector(".message").textContent = "⛔ No Number!!";
   } else {
     if (guess === randomNumber) {
       document.querySelector(".message").textContent = "🎉Correct Number";
-      document.querySelector(".number").textContent = randomNumber;
+      document.querySelector(".highscore").textContent =
+        document.querySelector(".score").textContent;
     } else if (guess < randomNumber) {
-      document.querySelector(".message").textContent = "Too Low!!";
+      if (document.querySelector(".score").textContent > 1) {
+        document.querySelector(".message").textContent = "Too Low!!";
+      } else {
+        document.querySelector(".message").textContent =
+          "You Lost the game!💥💥";
+      }
+      document.querySelector(".score").textContent--;
     } else {
-      document.querySelector(".message").textContent = "Too High!!";
+      if (document.querySelector(".score").textContent > 1) {
+        document.querySelector(".message").textContent = "Too High!!";
+      } else {
+        document.querySelector(".message").textContent =
+          "You Lost the game!😓😥";
+      }
+      document.querySelector(".score").textContent--;
     }
   }
 });
