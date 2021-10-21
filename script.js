@@ -20,8 +20,14 @@ document.querySelector(".check").addEventListener("click", function () {
     // when the player wins
     if (guess === randomNumber) {
       document.querySelector(".message").textContent = "🎉Correct Number";
-      document.querySelector(".highscore").textContent =
-        document.querySelector(".score").textContent;
+
+      if (
+        document.querySelector(".highscore").textContent <
+        document.querySelector(".score").textContent
+      ) {
+        document.querySelector(".highscore").textContent =
+          document.querySelector(".score").textContent;
+      }
       document.querySelector(".number").textContent = randomNumber;
       document.querySelector("body").style.backgroundColor = "#60b347";
 
