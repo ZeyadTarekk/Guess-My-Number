@@ -1,6 +1,6 @@
 # Guess My Number
 
-## Live Demo: <a href="https://zeyadta.github.io/Guess-My-Number/" >Here</a>
+## Live Demo: <a href="https://ZeyadTarekk.github.io/Guess-My-Number/" >Here</a>
 
 A simple game using HTML, CSS and JavaScript using DOM Manipulation
 
