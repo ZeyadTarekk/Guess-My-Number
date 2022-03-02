@@ -10,7 +10,7 @@
 [![GitHub license](https://img.shields.io/github/license/ZeyadTarekk/Guess-My-Number)](https://github.com/ZeyadTarekk/Guess-My-Number/blob/master/LICENSE)
 [![GitHub forks](https://img.shields.io/github/forks/ZeyadTarekk/Guess-My-Number)](https://github.com/ZeyadTarekk/Guess-My-Number/network/members)
 [![GitHub stars](https://img.shields.io/github/stars/ZeyadTarekk/Guess-My-Number)](https://github.com/ZeyadTarekk/Guess-My-Number/stargazers)
-[![GitHub Language](https://img.shields.io/github/languages/count/ZeyadTarekk/Guess-My-Number)](https://img.shields.io/github/languages/count/ZeyadTarekk/Guess-My-Number)
+[![GitHub Language](https://img.shields.io/github/languages/count/ZeyadTarekk/Guess-My-Number)](https://github.com/ZeyadTarekk/Guess-My-Number)
 
 </div>
 
